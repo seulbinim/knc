@@ -1,0 +1,104 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+/* ScreenReader Only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+}
+
+/* Body Font Family */
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+/* Navbar */
+.navbar-brand {
+  width: 315px;
+}
+
+.navbar-brand img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+// footer
+.footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .navbar-expand-md .navbar-nav {
+    transform: translateY(0.75rem);
+  }
+  body {
+    padding-top: 112px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel {
+    background-color: rgba(33, 37, 41, 1);
+  }
+  .carousel-caption {
+    position: static;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .navbar-brand {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding-top: 128px;
+  }
+}
+
+.carousel-img img {
+  width: 100%;
+}
+
+.carousel-caption {
+  bottom: initial;
+  top: 4.5rem;
+}
